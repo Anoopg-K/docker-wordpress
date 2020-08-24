@@ -1,4 +1,4 @@
-#Wordpress with docker compose
+# Wordpress with docker compose
 
 ##Environment Variables
 
