@@ -1,6 +1,6 @@
 # Wordpress with docker compose
 
-I have used docker compose to set up wordpress in a docker container using docker volumes and a new network.
+Here docker compose is used to set up wordpress in a docker container using docker volumes and bridge network.
 
 ```Eg: docker network create --driver bridge wpnet  
 
