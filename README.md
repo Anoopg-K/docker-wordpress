@@ -14,23 +14,7 @@ docker run \
 -e MYSQL_USER=wpuser \
 -e MYSQL_PASSWORD=wpuser123 \
 mysql:5.6
-
-
-docker run \
--d \
---name wordpress \
--p 80:80 \
---network wpnet \
--v wordpress-vol:/var/www/html \
--e WORDPRESS_DB_HOST=database \
--e WORDPRESS_DB_USER=wpuser \
--e WORDPRESS_DB_PASSWORD=wpuser123 \
--e WORDPRESS_DB_NAME=wordpress \
-wordpress:latest
 ```
-
-  
-
 ## Environment Variables
 
 #### MYSQL_ROOT_PASSWORD
@@ -42,20 +26,8 @@ wordpress:latest
 #### MYSQL_PASSWORD
  * Password of mysql user  
 
-#### WORDPRESS_DB_HOST
- * Specify wordpress database host  
-#### WORDPRESS_DB_USER
- * Database user  
-#### WORDPRESS_DB_PASSWORD
- * Password of database user  
-#### WORDPRESS_DB_NAME
- * Name of wordpress database
-
 #### Networks
  * wpnet
 
 #### Volumes
  * mysql-vol
- * wordpress-vol
-
-
